@@ -1,12 +1,14 @@
 {
-  "name": "wayland",
-  "version": "0.0.0",
-  "description": "Wayland",
-  "main": "app.js",
   "author": {
-    "name": "Administrator"
+    "name": "Quberation Industries"
   },
   "dependencies": {
     "discord.js": "^11.3.0"
-  }
+  },
+  "description": "Wayland",
+  "license": "MIT",
+  "main": "app.js",
+  "name": "wayland",
+  "repository": "https://github.com/Cubic-Zirconia/WaylandOS-R2",
+  "version": "0.0.0"
 }
