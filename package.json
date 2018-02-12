@@ -1,0 +1,12 @@
+{
+  "name": "wayland",
+  "version": "0.0.0",
+  "description": "Wayland",
+  "main": "app.js",
+  "author": {
+    "name": "Administrator"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
