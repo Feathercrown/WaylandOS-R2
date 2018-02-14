@@ -261,4 +261,4 @@ __pycache__/
 *.pyc
 
 # Ignore the Wayland Token file; that's loaded from a private cloud.
-wayland_token.json
+wayland_token.txt
