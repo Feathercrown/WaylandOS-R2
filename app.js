@@ -6,7 +6,8 @@ const fs = require('fs');
 
 // Check for token and throw if it doesn't exist
 try {
-    const token = require(`./wayland_token.txt`);
+    const token = `"${require("./wayland_token.txt")}"`;
+    console.log(token);
 }
 catch (err) {
     throw 'oopsie. ' + err;
