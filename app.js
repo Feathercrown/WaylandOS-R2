@@ -10,5 +10,5 @@ try {
     console.log(fiel);
 }
 catch (err) {
-    throw err;
+    throw `Ohno! You didn't install the token file! :(\n[${err}]`;
 }
