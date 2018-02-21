@@ -4,11 +4,17 @@
 const DiscordClient = require('discord.js');
 const fs = require('fs');
 
-// Check for token and throw if it doesn't exist
+// Define token in global, attempt to load token, and throw if it doesn't exist
+var token;
+
 try {
-    const token = fs.readFileSync("./wayland_token.txt", "utf-8");
-    console.log(token);
+    token = fs.readFileSync("./wayland_token.txt", "utf-8");
+    if(token === '') throw 'EEMPTY';
 }
 catch (err) {
-    throw `Ohno! You didn't install the token file! :(\n[${err}]`;
+    var errFriendly;
+    if (err.code === 'ENOENT') errFriendly = `Wayland couldn't find the token file! Are you sure it's in Wayland's root directory? (${})`
+    if (err.code === 'EEMPTY') errFriendly = `The token file is empty!`
+    throw `Don't panic! ${errFriendly}`;
 }
+console.log(token);
