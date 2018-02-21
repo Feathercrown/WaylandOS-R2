@@ -6,8 +6,8 @@ const fs = require('fs');
 
 // Check for token and throw if it doesn't exist
 try {
-    
-    console.log(token);
+    var fiel = fs.readFileSync("./wayland_token.txt", "utf-8");
+    console.log(fiel);
 }
 catch (err) {
     throw err;
